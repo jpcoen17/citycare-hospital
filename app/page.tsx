@@ -29,7 +29,7 @@ export default function Home() {
   useEffect(() => {
     const initLenis = async () => {
       try {
-        const Lenis = (await import("@studio-freight/lenis")).default;
+        const Lenis = (await import("lenis")).default;
         const lenis = new Lenis({
           duration: 1.4,
           easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
