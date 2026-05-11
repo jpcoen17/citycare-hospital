@@ -57,8 +57,8 @@ export function StatisticsSection() {
                 suffix={stat.suffix}
                 prefix={stat.prefix}
                 label={stat.label}
-                valueClassName={`text-3xl md:text-4xl group-hover:scale-110 transition-transform duration-300`}
-                style={{ color: stat.color } as React.CSSProperties}
+                valueClassName="text-3xl md:text-4xl group-hover:scale-110 transition-transform duration-300"
+                color={stat.color}
               />
             </motion.div>
           ))}
